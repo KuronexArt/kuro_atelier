@@ -462,3 +462,23 @@ ul { list-style: none; }
   .terms div { grid-template-columns: 1fr; }
   .group-row { grid-template-columns: 1fr; }
 }
+
+/* ---------- 예상 견적 계산기 (기존 스타일 유지) ---------- */
+.estimate-intro { color: var(--muted); margin-bottom: 16px; }
+.estimate-scroll { overflow-x: auto; }
+.estimate-table { width: 100%; border-collapse: collapse; min-width: 510px; }
+.estimate-table th, .estimate-table td { padding: 11px 9px; border-bottom: 1px solid var(--line); text-align: center; }
+.estimate-table thead th { color: var(--muted); font-size: 13px; font-weight: 600; }
+.estimate-table tbody th { text-align: left; font-weight: 650; white-space: nowrap; }
+.estimate-table tbody th small { color: var(--muted); font-size: 12px; padding-left: 4px; }
+.estimate-table input[type=number] { width: 68px; background: var(--inset); color: var(--text); border: 1px solid var(--line); border-radius: 6px; font: inherit; padding: 6px; text-align: center; }
+.estimate-table input[type=checkbox], .estimate-collider input { width: 17px; height: 17px; accent-color: var(--accent); cursor: pointer; }
+.estimate-collider { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 17px 0; cursor: pointer; }
+.estimate-collider strong { color: var(--accent); font-family: var(--font-num); }
+.estimate-result { display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; padding: 18px; border: 1px solid var(--line); background: var(--inset); }
+.estimate-result > div { display:flex; flex-direction:column; gap:2px; }
+.estimate-result span { color:var(--muted); font-size:13px; }
+.estimate-result strong { font-family:var(--font-num); color: var(--accent); font-size: 25px; }
+.estimate-breakdown { padding: 12px 3px; color: var(--muted); font-size: 13px; white-space: pre-line; }
+.estimate-reset { border:1px solid var(--line); border-radius:6px; background:var(--inset); color:var(--text); padding:8px 14px; font:inherit; cursor:pointer; margin-bottom:8px; }
+.estimate-reset:hover { border-color:var(--accent); }
